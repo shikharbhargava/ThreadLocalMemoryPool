@@ -3,11 +3,11 @@ cmake_minimum_required(VERSION 3.12)
 # Compiler flags first
 include(cmake/CompilerFlags.cmake)
 
-project(threading VERSION 0.1.0 LANGUAGES CXX)
+project(memoryPool VERSION 0.1.0 LANGUAGES CXX)
 
 # Set default installation prefix to build/install/ContainerRegistry
 if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
-  set(CMAKE_INSTALL_PREFIX "${CMAKE_BINARY_DIR}/install/threading" CACHE PATH "Installation prefix" FORCE)
+  set(CMAKE_INSTALL_PREFIX "${CMAKE_BINARY_DIR}/install/memoryPool" CACHE PATH "Installation prefix" FORCE)
 endif()
 
 # Enable testing
@@ -19,11 +19,11 @@ add_subdirectory(ImageFilter)
 
 # add_subdirectory(tests)
 
-add_executable(threading main/main.cpp)
-target_link_libraries(threading PRIVATE ArgParser ImageFilter)
+add_executable(memoryPool main/main.cpp)
+target_link_libraries(memoryPool PRIVATE ArgParser ImageFilter)
 
 # Install targets
-install(TARGETS threading
+install(TARGETS memoryPool
   RUNTIME DESTINATION bin
   LIBRARY DESTINATION lib
   ARCHIVE DESTINATION lib

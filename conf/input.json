@@ -1,10 +1,10 @@
 {
     "images": [
-        "/mnt/g/github/MutliThreadingProject/data/"
+        "/mnt/g/github/ThreadLocalMemoryPool/data/"
     ],
     "copy_original": true,
     "thread_on": "p",
-    "output": "/mnt/g/github/MutliThreadingProject/output",
+    "output": "/mnt/g/github/ThreadLocalMemoryPool/output",
     "wait_before_start_s": 0,
     "filters": [
         {
