@@ -1,0 +1,35 @@
+{
+    "images": [
+        "/mnt/g/github/MutliThreadingProject/data/"
+    ],
+    "copy_original": true,
+    "thread_on": "p",
+    "output": "/mnt/g/github/MutliThreadingProject/output",
+    "wait_before_start_s": 0,
+    "filters": [
+        {
+            "type": "GAUSSIAN",
+            "config": {
+                "kernel_size": 5,
+                "sigma": 0
+            },
+            "output_postfix": "_gaussian"
+        },
+        {
+            "type": "MEDIAN",
+            "config": {
+                "kernel_size": 5
+            },
+            "output_postfix": "_median"
+        },
+        {
+            "type": "BILATERAL",
+            "config": {
+                "kernel_size": 9,
+                "sigma_color": 75,
+                "sigma_space": 75
+            },
+            "output_postfix": "_bilateral"
+        }
+    ]
+}
